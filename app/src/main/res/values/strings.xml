@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Material_Animations</string>
+    <string name="title_activity_b">ActivityB</string>
+    <string name="circle_name">circle_red</string>
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="br.com.etm.material_animations.ActivityB">
+
+    <ImageView
+        android:id="@+id/ic_launcher"
+        android:layout_width="260dp"
+        android:layout_height="260px"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:transitionName="@string/circle_name"
+        android:src="@drawable/circle" />
+
+    <TextView
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:text="asdaasdasdasdasdasdasdasdas
+        asdasdasdasdasdasd
+        asdasdasdasdasdasd
+        asdasdasdasd
+        asdasdadddddddddddddddddddddddddd
+        dddddddddddddddddddddddddddddddddddddd
+        ddddddddddddddddddddddd"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
