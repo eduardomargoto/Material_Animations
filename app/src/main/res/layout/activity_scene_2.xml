@@ -1,39 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-
-
     <ImageView
-        android:id="@+id/circle_red"
-        android:layout_width="192px"
-        android:layout_height="192px"
-        android:transitionName="@string/circle_name"
+        android:id="@+id/circle_green"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         android:src="@drawable/circle"
-        android:tint="@android:color/holo_red_dark"
+        android:tint="@android:color/holo_green_dark"
         android:onClick="clickChangeAnimations"
-        android:layout_marginRight="59dp"
-        android:layout_marginEnd="59dp"
-        android:layout_alignTop="@+id/circle_green"
+        android:layout_alignTop="@+id/circle_red"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <ImageView
-        android:id="@+id/circle_green"
-        android:layout_width="192px"
-        android:layout_height="192px"
-        android:transitionName="@string/circle_name"
+        android:id="@+id/circle_red"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
         android:src="@drawable/circle"
-        android:tint="@android:color/holo_green_dark"
-        android:layout_marginTop="161dp"
-        android:layout_marginLeft="42dp"
-        android:layout_marginStart="42dp"
+        android:tint="@android:color/holo_red_dark"
+        android:layout_marginTop="129dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+
 </RelativeLayout>

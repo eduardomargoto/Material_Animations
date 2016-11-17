@@ -9,6 +9,7 @@ import android.transition.ChangeBounds;
 import android.transition.Explode;
 import android.transition.Scene;
 import android.transition.Slide;
+import android.transition.TransitionInflater;
 import android.transition.TransitionManager;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     ViewGroup background, view_rl;
     Scene scene1, scene2;
     boolean side = true;
+    int count = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +37,11 @@ public class MainActivity extends AppCompatActivity {
             getWindow().setExitTransition(slide);
         }
         background = (ViewGroup) findViewById(R.id.activity_main);
-        view_rl  = (ViewGroup) findViewById(R.id.view_rl);
+        view_rl = (ViewGroup) findViewById(R.id.view_rl);
         if (Build.VERSION.SDK_INT >= 19) {
             scene1 = Scene.getSceneForLayout(view_rl, R.layout.activity_scene_1, this);
             scene2 = Scene.getSceneForLayout(view_rl, R.layout.activity_scene_2, this);
+
 
         }
 
@@ -75,14 +78,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void clickChangeAnimations(View v) {
         if (Build.VERSION.SDK_INT >= 19) {
-            switch (v.getId()) {
-                case R.id.scene1:
+            switch (count) {
+                case 0:
                     TransitionManager.go(scene1, new ChangeBounds());
                     break;
-                case R.id.scene2:
+                case 1:
                     TransitionManager.go(scene2, new ChangeBounds());
                     break;
             }
+            count++;
+            if(count == 2)
+                count = 0;
         }
     }
 
